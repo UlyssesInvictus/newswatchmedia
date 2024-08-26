@@ -1,0 +1,64 @@
+{
+  "feed": {
+    "mailing": {
+      "blocks": [
+        {
+          "block": {
+            "name": "energy",
+            "items": {
+              "item": [
+                {
+                           "variables":{
+                              "variable":[
+                                 {
+                                    "key":"url",
+                                    "value":"https://google.com"
+                                 },
+                                 {
+                                    "key":"title",
+                                    "value":"This is the google homepage"
+                                 },
+                                 {
+                                    "key":"summary",
+                                    "value":"This is a much longer summary about how this is the google homepage. It can fit lots of content."
+                                 }
+                              ]
+                           }
+                  },
+              ]
+            }
+          }
+        },
+                {
+          "block": {
+            "name": "hr",
+            "items": {
+              "item": [
+                {
+                           "variables":{
+                              "variable":[
+                                 {
+                                    "key":"url",
+                                    "value":"https://google.com"
+                                 },
+                                 {
+                                    "key":"title",
+                                    "value":"This is the google homepage"
+                                 },
+                                 {
+                                    "key":"summary",
+                                    "value":"This is a much longer summary about how this is the google homepage. It can fit lots of content."
+                                 }
+                              ]
+                           }
+                  },
+              ]
+            }
+          }
+        },
+
+        
+      ]
+    }
+  }
+}
