@@ -1,0 +1,30 @@
+<blocks>
+    <block name="block1">
+        <items>
+            <item>
+            <variables>
+                <variable>
+                    <key>offer_url</key>
+                    <value>http://yourwebsite.xyz/18317/page-x/</value>
+                </variable>
+                <variable>
+                    <key>offer_price</key>
+                    <value>498.00</value>
+                </variable>
+            </variables>   
+            </item>
+            <item>
+                <variables>
+                    <variable>
+                        <key>offer_url</key>
+                        <value>http://yourwebsite.xyz/18317/page-y/</value>
+                    </variable>
+                    <variable>
+                        <key>offer_price</key>
+                        <value>250.00</value>
+                    </variable>
+                </variables>
+            </item>
+        </items>
+    </block>
+</blocks>
