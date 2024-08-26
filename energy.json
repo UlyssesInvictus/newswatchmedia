@@ -1,1 +1,34 @@
 
+{
+   "feed": {
+      "mailing": {
+         "blocks": {
+            "block": {
+               "name": "energy",
+               "items": {
+                  "item": [
+                     {
+                        "variables": {
+                           "variable": [
+                              {
+                                 "key": "url",
+                                 "value": "https://google.com"
+                              },
+                              {
+                                 "key": "title",
+                                 "value": "google"
+                              },
+                              {
+                                 "key": "summary",
+                                 "value": "google"
+                              }
+                           ]
+                        }
+                     },
+                  ]
+               }
+            }
+         }
+      }
+   }
+}
