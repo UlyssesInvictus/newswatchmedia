@@ -26,19 +26,17 @@ with open(args.file, 'r') as f:
             continue
         elements = list(csv.reader([l.strip()]))[0]
         if len(elements) == 1:
-            if len(output) != 0 and currentFile is not None:
-                with open(f'pages/{currentFile}.html', 'w+') as f:
-                    f.write(output)
-                output = ""
-
-            currentFile = elements[0].lower()
+            if len(output) != 0:
+                output += "\n===========\n"
+            output += elements[0]
+            output += "\n"
+            output += "===========\n"
         else:
             try:
                 output += storyTemplate.format(href=elements[0],title=elements[1],summary=elements[2])
             except:
                 print("Error" + str(elements))
-        
-    if len(output) != 0 and currentFile is not None:
-        with open(f'pages/{currentFile}.html', 'w+') as f:
-            f.write(output)
+
+with open('output.txt', 'w+') as f:
+    f.write(output)
 
