@@ -24,7 +24,7 @@ with open(args.file, 'r') as f:
     for l in lines:
         if len(l.strip()) < 1:
             continue
-        elements = list(csv.reader([l.strip()]))[0]
+        elements = list(csv.reader([l.strip().replace("”", "\"").replace("“", "\"")]))[0]
         if len(elements) == 1:
             if len(output) != 0 and currentFile is not None:
                 with open(f'pages/{currentFile}.html', 'w+') as f:
@@ -33,11 +33,13 @@ with open(args.file, 'r') as f:
 
             currentFile = elements[0].lower()
         else:
+            if len(elements) != 3:
+                print("Less than 3 in a line" + str(elements))
             try:
                 output += storyTemplate.format(href=elements[0],title=elements[1],summary=elements[2])
             except:
                 print("Error" + str(elements))
-        
+
     if len(output) != 0 and currentFile is not None:
         with open(f'pages/{currentFile}.html', 'w+') as f:
             f.write(output)
